@@ -2,7 +2,7 @@ import {APIGatewayProxyEventV2} from 'aws-lambda';
 
 import { SignUpController } from '../controllers/SignUpController';
 
-import { parseEvent } from '../utils/ParseEvent';
+import { parseEvent } from '../utils/parseEvent';
 
 import { parseResponse } from '../utils/parseResponse'; 
 
