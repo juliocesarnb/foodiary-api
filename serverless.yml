@@ -1,0 +1,33 @@
+org: juliocesarnb
+service: foodiary-api
+
+# this command zip every lambda function individually 
+package:
+  individually: true
+
+provider:
+  name: aws
+  region: us-east-1
+  architecture: arm64
+  runtime: nodejs22.x
+
+
+build:
+  esbuild:
+  minify: true
+  sourcemap: false
+
+functions:
+  signin:
+    handler: src/signin.handler
+    events:
+      - httpApi:
+          path: /signin
+          method: POST
+
+  signup:
+    handler: src/signup.handler
+    events:
+      - httpApi:
+          path: /signup
+          method: POST

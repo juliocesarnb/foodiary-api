@@ -1,0 +1,9 @@
+export async function handler(event){
+    return {
+        statusCode: 200,
+        body: JSON.stringify({
+            hello: 'Deu bom! vamos criar a conta...',
+           
+        }),
+    }
+}
