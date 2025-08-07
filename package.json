@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/juliocesarnb/foodiary-api/issues"
   },
-  "homepage": "https://github.com/juliocesarnb/foodiary-api#readme"
+  "homepage": "https://github.com/juliocesarnb/foodiary-api#readme",
+  "dependencies": {
+    "zod": "^4.0.15"
+  }
 }
